@@ -185,7 +185,8 @@ h1 {
     flex-shrink: 0; /* Prevent images from shrinking */
     width: auto; /* Allow images to maintain their aspect ratio */
     max-width: 250px; /* Limit the width of each image */
-    height: auto;
+    height: 350px; /* Increased fixed height for taller images */
+    object-fit: contain; /* Prevent stretching, show full image */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -222,33 +223,24 @@ h1 {
     margin-bottom: 20px;
 }
 
+.publication-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between images */
+    margin: 10px 0;
+}
+
 .publication-cover,
 .publication-artwork {
-    width: 100%;
-    max-width: 400px; /* Limit the width of the images */
-    height: auto;
-    aspect-ratio: 8 / 12; /* Maintain a 16:9 aspect ratio */
+    height: 640px; /* Set a fixed height */
+    width: auto; /* Let width scale proportionally */
+    max-width: 100%; /* Prevent overflow */
+    object-fit: contain; /* Prevent stretching, show full image */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
     transition: transform 0.3s ease;
-}
-
-.publication-cover-wide,
-.publication-artwork-wide {
-    width: auto; /* Keep the original width */
-    max-width: 800px; /* Increase the maximum width of the images */
-    height: auto;
-    aspect-ratio: 16 / 9; /* Maintain a wide 16:9 aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-    transition: transform 0.3s ease;
-}
-
-.publication-cover-wide:hover,
-.publication-artwork-wide:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    display: block;
 }
 
 .publication-cover:hover,
