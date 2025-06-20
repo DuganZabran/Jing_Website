@@ -4,164 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jing's Artwork</title>
-    <!-- Import Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home_styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Artwork</a></li>
-            <li><a href="exhibitions.html">Previous Publications and Exhibitions</a></li>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white shadow mb-8">
+        <ul class="flex justify-center space-x-8 py-4 text-lg font-medium">
+            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+            <li><a href="portfolio.html" class="hover:text-blue-600 transition">Artwork</a></li>
+            <li><a href="exhibitions.html" class="hover:text-blue-600 transition">Previous Publications and Exhibitions</a></li>
         </ul>
     </nav>
-    
-    <section class="collection-intro">
-        <h1>Water Remembers, 2025</h1>
-        <p>This three-piece collection explores the theme of water pollution. Each piece reflects a different aspect of how water is affected, and how it speaks through the materials.</p>
-    </section>
 
-    <div class="art-pieces-container">
-        <section class="art-piece">
-            <h2>The Weight of Decay</h2>
-            <div class="art-images">
-                <img src="img/Weight_of_Decay_2.jpg" alt="The Weight of Decay - Image 1">
-                <img src="img/Weight_of_Decay_1.jpg" alt="The Weight of Decay - Image 2">
-                <img src="img/Weight_of_Decay_3.jpg" alt="The Weight of Decay - Image 3">
+    <main class="max-w-7xl mx-auto px-4 space-y-16">
+
+        <!-- Water Remembers Collection -->
+        <section>
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold mb-2">Water Remembers, 2025</h1>
+                <p class="text-gray-600">This three-piece collection explores the theme of water pollution. Each piece reflects a different aspect of how water is affected, and how it speaks through the materials.</p>
             </div>
-            <p><strong>Icelandic Wool, Corn Husk, Cotton Thread</strong></p>
-            <p>This piece centers on a decaying ecosystem: riverside plants, crops that once thrived, and the slow death of systems dependent on clean water. Dried corn husks are integrated into the knitted wool, creating a texture that is both soft and brittle.</p>
-        </section>
-    
-        <section class="art-piece">
-            <h2>What the Water Holds</h2>
-            <div class="art-images">
-                <img src="img/What_the_Water_Holds_1.jpg" alt="What the Water Holds - Image 1">
-                <img src="img/What_the_Water_Holds_2.jpg" alt="What the Water Holds - Image 2">
-                <img src="img/What_the_Water_Holds_3.jpg" alt="What the Water Holds - Image 3">
+            <div class="space-y-10">
+                <!-- The Weight of Decay -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">The Weight of Decay</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold mb-2 text-left">Icelandic Wool, Corn Husk, Cotton Thread</p>
+                            <p class="text-gray-700 text-left">This piece centers on a decaying ecosystem: riverside plants, crops that once thrived, and the slow death of systems dependent on clean water. Dried corn husks are integrated into the knitted wool, creating a texture that is both soft and brittle.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Weight_of_Decay_2.jpg" alt="The Weight of Decay - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Weight_of_Decay_1.jpg" alt="The Weight of Decay - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Weight_of_Decay_3.jpg" alt="The Weight of Decay - Image 3" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <!-- What the Water Holds -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">What the Water Holds</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold mb-2 text-left">Weld, Cape Jasmine, Sappanwood, Madder, Cochineal on Merino Wool, Cashmere, Cotton, and Recycled Nylon Yarns</p>
+                            <p class="text-gray-700 text-left">This woven work explores what lies unseen within water. Using the krokbragd technique, the piece builds color gradually in block-like patterns. It draws directly from dye experiments that combine natural dyes with metal mordants and pH variation. Dyes include cochineal, madder, cape jasmine, weld, sappen wood, cutch, walnut hull, sandalwood, henna, and onion skin. The colors move from light to dark, creating a gradual shift across the surface. This color transition builds slowly, like a quiet crescendo, showing how pollution increases over time—first invisible, then growing stronger and deeper.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/What_the_Water_Holds_1.jpg" alt="What the Water Holds - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/What_the_Water_Holds_2.jpg" alt="What the Water Holds - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/What_the_Water_Holds_3.jpg" alt="What the Water Holds - Image 3" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tension in the Flow -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Tension in the Flow</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold mb-2 text-left">Natural Dyed Wool Fiber, Cotton Thread</p>
+                            <p class="text-gray-700 text-left">This piece is made with felting and embroidery. Felting, a chaotic and sometimes violent process, shows the overflow and saturation, a struggle between the water and pollution. The piece shows the moment when pollution pours into water, soaking deep into its body. There is a sense of struggle in the fibers. The stitches move through the felt like currents. Pollution presses down, but the water pushes back. The two forces meet, creating a visible tension in the surface. It is a conflict between damage and resistance.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Tension_in_the_Flow_1.jpg" alt="Tension in the Flow - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tension_in_the_Flow_2.jpg" alt="Tension in the Flow - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tension_in_the_Flow_3.jpg" alt="Tension in the Flow - Image 3" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p><strong>Weld, Cape Jasmine, Sappanwood, Madder, Cochineal on Merino Wool, Cashmere, Cotton, and Recycled Nylon Yarns</strong></p>
-            <p>This woven work explores what lies unseen within water. Using the krokbragd technique, the piece builds color gradually in block-like patterns. It draws directly from dye experiments that combine natural dyes with metal mordants and pH variation. Dyes include cochineal, madder, cape jasmine, weld, sappen wood, cutch, walnut hull, sandalwood, henna, and onion skin. The colors move from light to dark, creating a gradual shift across the surface. This color transition builds slowly, like a quiet crescendo, showing how pollution increases over time—first invisible, then growing stronger and deeper.</p>
-        </section>
-
-        <section class="art-piece">
-            <h2>Tension in the Flow</h2>
-            <div class="art-images">
-                <img src="img/Tension_in_the_Flow_1.jpg" alt="Tension in the Flow - Image 1">
-                <img src="img/Tension_in_the_Flow_2.jpg" alt="Tension in the Flow - Image 2">
-                <img src="img/Tension_in_the_Flow_3.jpg" alt="Tension in the Flow - Image 3">
-            </div>
-            <p><strong>Natural Dyed Wool Fiber, Cotton Thread</strong></p>
-            <p>This piece is made with felting and embroidery. Felting, a chaotic and sometimes violent process, shows the overflow and saturation, a struggle between the water and pollution. The piece shows the moment when pollution pours into water, soaking deep into its body. There is a sense of struggle in the fibers. The stitches move through the felt like currents. Pollution presses down, but the water pushes back. The two forces meet, creating a visible tension in the surface. It is a conflict between damage and resistance.</p>
-        </section>
-    </div>
-
-    <section class="collection-intro">
-        <h1>Pakistan Flood Response, 2024</h1>
-        <p><strong>Collaboration by Jing Pei & Yichen Pan</strong></p>
-        <p>Data Source: UN Migration Displacement Tracking Matrix  </p>
-    </section>
-
-    <div class="art-pieces-container">
-        <section class="art-piece">
-            <h2>Pakistan Flood Response</h2>
-            <div class="art-images">
-                <img src="img/Pakistan_Flood_Response_2.jpg" alt="Pakistan Flood Response - Image 1">
-                <img src="img/Pakistan_Flood_Response_1.jpg" alt="Pakistan Flood Response - Image 2">
-                <img src="img/Pakistan_Flood_Response_3.jpg" alt="Pakistan Flood Response - Image 3">
-            </div>
-            <p><strong>Recycled Nylon Yarn From Econyl</strong></p>
-            <p>In 2022, storms and heavy monsoon rains in Pakistan caused widespread flooding and landslides across the country. Up to 33 million people have been affected by the floods and a total of 90 districts have been labeled by the Government of Pakistan as 'calamity-hit'.</p>
-            <p>This piece represents a total of 2,317,254 people temporarily displaced across 11 districts of Sindh province. The tufting patches represent the total population per district, with dark blue gradients representing higher concentrations. The orange woven squares reflect the concentration of displaced people in each district. Each square represents 325 people.</p>
-        </section>
-    </div>
-    
-    <section class="collection-intro">
-        <h1>Breath, 2023</h1>
-    </section>
-
-    <div class="art-pieces-container">
-        <section class="art-piece">
-            <h2>Breath</h2>
-            <div class="art-images">
-                <img src="img/Floral_Lamp_1.JPG" alt="Floral Lamp - Image 1">
-                <img src="img/Floral_Lamp_2.JPG" alt="Floral Lamp - Image 2">
-                <img src="img/Floral_Lamp_3.JPG" alt="Floral Lamp - Image 3">
-            </div>
-            <p><strong>Felted Merino Wool</strong></p>
-            <p>This motorized flower sculpture features petals of lightweight merino wool felt that gently open and close, illuminated by a soft, pulsing light at its center. The movement and glow evoke the quiet rhythms of nature, inviting calm and contemplation.</p>
-            <p>Woven textiles inspired by grasses surround the flower, creating a tactile landscape that suggests open fields and freedom. The piece offers a gentle space where materials respond softly to their surroundings and creativity unfolds with ease.</p>
-        </section>
-    </div>
-
-    <section class="collection-intro">
-        <h1>UV Purification Art</h1>
-    </section>
-
-
-    <section class="collection-intro">
-        <h1>Tacky Statues, 2022</h1>
-    </section>
-
-    <div class="art-pieces-container">
-        <section class="art-piece">
-            <h2>Tacky Monsters</h2>
-            <div class="art-images">
-                <img src="img/Tacky_Monsters_1.jpg" alt="Tacky Monsters - Image 1">
-                <img src="img/Tacky_Monsters_2.jpg" alt="Tacky Monsters - Image 2">
-            </div>
-            <p><strong>Cotton, Polyester, Silk Thread</strong></p>
-        </section>
-        
-
-        <section class="art-piece">
-            <h2>Tacky Flora</h2>
-            <div class="art-images">
-                <img src="img/Tacky_Flora_1.jpg" alt="Tacky Flora - Image 1">
-                <img src="img/Tacky_Flora_2.jpg" alt="Tacky Flora - Image 2">
-            </div>
-            <p><strong>Cotton, Polyester, Silk Thread</strong></p>
-        </section>
-        
-
-        <section class="art-piece">
-            <h2>Tacky Faces</h2>
-            <div class="art-images">
-                <img src="img/Tacky_Faces_1.jpg" alt="Tacky Faces - Image 1">
-                <img src="img/Tacky_Faces_2.jpg" alt="Tacky Faces - Image 2">
-            </div>
-            <p><strong>Cotton, Polyester, Silk Thread</strong></p>
-        </section>
-        
-
-        <section class="art-piece">
-            <h2>Tacky Dragon</h2>
-            <div class="art-images">
-                <img src="img/Tacky_Dragon_1.jpg" alt="Tacky Dragon - Image 1">
-                <img src="img/Tacky_Dragon_2.jpg" alt="Tacky Dragon - Image 2">
-            </div>
-            <p><strong>Cotton, Polyester, Silk Thread</strong></p>
         </section>
 
-        <section class="art-piece">
-            <h2>Tacky Fish</h2>
-            <div class="art-images">
-                <img src="img/Tacky_Fish_1.jpg" alt="Tacky Fish - Image 1">
-                <img src="img/Tacky_Fish_2.jpg" alt="Tacky Fish - Image 2">
+        <!-- Pakistan Flood Response Collection -->
+        <section>
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold mb-2">Pakistan Flood Response, 2024</h1>
+                <p class="font-semibold">Collaboration by Jing Pei & Yichen Pan</p>
+                <p class="text-gray-600">Data Source: UN Migration Displacement Tracking Matrix</p>
             </div>
-            <p><strong>Cotton, Polyester, Silk Thread</strong></p>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-center">Pakistan Flood Response</h2>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <p class="font-semibold mb-2 text-left">Recycled Nylon Yarn From Econyl</p>
+                        <p class="text-gray-700 text-left mb-2">In 2022, storms and heavy monsoon rains in Pakistan caused widespread flooding and landslides across the country. Up to 33 million people have been affected by the floods and a total of 90 districts have been labeled by the Government of Pakistan as 'calamity-hit'.</p>
+                        <p class="text-gray-700 text-left">This piece represents a total of 2,317,254 people temporarily displaced across 11 districts of Sindh province. The tufting patches represent the total population per district, with dark blue gradients representing higher concentrations. The orange woven squares reflect the concentration of displaced people in each district. Each square represents 325 people.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <img src="img/Pakistan_Flood_Response_2.jpg" alt="Pakistan Flood Response - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                        <img src="img/Pakistan_Flood_Response_1.jpg" alt="Pakistan Flood Response - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        <img src="img/Pakistan_Flood_Response_3.jpg" alt="Pakistan Flood Response - Image 3" class="max-h-96 w-auto object-contain rounded shadow">
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
 
-    <footer>
-        <div class="socials">
+        <!-- Breath Collection -->
+        <section>
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold mb-2">Breath, 2023</h1>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-center">Breath</h2>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <p class="font-semibold mb-2 text-left">Felted Merino Wool</p>
+                        <p class="text-gray-700 text-left mb-2">This motorized flower sculpture features petals of lightweight merino wool felt that gently open and close, illuminated by a soft, pulsing light at its center. The movement and glow evoke the quiet rhythms of nature, inviting calm and contemplation.</p>
+                        <p class="text-gray-700 text-left">Woven textiles inspired by grasses surround the flower, creating a tactile landscape that suggests open fields and freedom. The piece offers a gentle space where materials respond softly to their surroundings and creativity unfolds with ease.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <img src="img/Floral_Lamp_1.JPG" alt="Floral Lamp - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                        <img src="img/Floral_Lamp_2.JPG" alt="Floral Lamp - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        <img src="img/Floral_Lamp_3.JPG" alt="Floral Lamp - Image 3" class="max-h-96 w-auto object-contain rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UV Purification Art (No content, just heading) -->
+        <section>
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold mb-2">UV Purification Art</h1>
+            </div>
+        </section>
+
+        <!-- Tacky Statues Collection -->
+        <section>
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold mb-2">Tacky Statues, 2022</h1>
+            </div>
+            <div class="space-y-10">
+                <!-- Tacky Monsters -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Tacky Monsters</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold text-left">Cotton, Polyester, Silk Thread</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Tacky_Monsters_1.jpg" alt="Tacky Monsters - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tacky_Monsters_2.jpg" alt="Tacky Monsters - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tacky Flora -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Tacky Flora</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold text-left">Cotton, Polyester, Silk Thread</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Tacky_Flora_1.jpg" alt="Tacky Flora - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tacky_Flora_2.jpg" alt="Tacky Flora - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tacky Faces -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Tacky Faces</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold text-left">Cotton, Polyester, Silk Thread</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Tacky_Faces_1.jpg" alt="Tacky Faces - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tacky_Faces_2.jpg" alt="Tacky Faces - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tacky Dragon -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Tacky Dragon</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold text-left">Cotton, Polyester, Silk Thread</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Tacky_Dragon_1.jpg" alt="Tacky Dragon - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tacky_Dragon_2.jpg" alt="Tacky Dragon - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tacky Fish -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Tacky Fish</h2>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <p class="font-semibold text-left">Cotton, Polyester, Silk Thread</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <img src="img/Tacky_Fish_1.jpg" alt="Tacky Fish - Image 1" class="max-h-96 w-auto object-contain rounded shadow">
+                            <img src="img/Tacky_Fish_2.jpg" alt="Tacky Fish - Image 2" class="max-h-96 w-auto object-contain rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-16 py-8 bg-white shadow-inner">
+        <div class="flex justify-center space-x-6">
             <a href="https://www.linkedin.com/in/jing-pei-6055b4280/" target="_blank" aria-label="LinkedIn">
-                <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                <img src="img/linkedin-icon.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80 transition">
             </a>
             <a href="https://www.instagram.com/pj322zzz/" target="_blank" aria-label="Instagram">
-                <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
+                <img src="img/instagram-icon.png" alt="Instagram" class="w-8 h-8 hover:opacity-80 transition">
             </a>
         </div>
     </footer>
